@@ -7,8 +7,12 @@ trigger:
 - main
 - feature/*
 
+# pool:
+#   vmImage: ubuntu-latest
+
 pool:
-  vmImage: ubuntu-latest
+  demands:
+    - agent.name -equals mydockeragent
 
 steps:
 - script: echo Hello, world!

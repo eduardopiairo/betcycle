@@ -31,4 +31,4 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'build/build_db_nuspec.ps1'
-    arguments: 'betcycle'
+    arguments: 'betcycle-migrations'

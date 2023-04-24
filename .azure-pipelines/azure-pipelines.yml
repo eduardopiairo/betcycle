@@ -11,9 +11,12 @@ trigger:
 #   vmImage: ubuntu-latest
 
 pool: 
-  name: default
-  demands:
-    - agent.name -equals mydockeragent
+  vmImage: windows-2022
+
+# pool: 
+#   name: default
+#   demands:
+#     - agent.name -equals mydockeragent
 
 steps:
 - script: echo Hello, world!

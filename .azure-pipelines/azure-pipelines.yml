@@ -19,7 +19,7 @@ pool:
 #     - agent.name -equals mydockeragent
 
 steps:
-- script: $(Build.BuildNumber)
+- script: echo $(Build.BuildNumber)
   displayName: 'build number'
 
 

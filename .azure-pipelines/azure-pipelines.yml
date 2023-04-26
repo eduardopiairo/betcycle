@@ -32,3 +32,10 @@ steps:
   inputs:
     filePath: 'build/build_db_nuspec.ps1'
     arguments: 'betcycle-migrations'
+  displayName: 'build and replace'
+
+- task: PowerShell@2
+  inputs:
+    filePath: 'build/nuget-pack_db-app.ps1'
+    arguments: 'betcycle-migrations'
+  displayName: 'create pack'

@@ -13,4 +13,7 @@ Write-Output $packFullPath
 #nuget push $packFullPath -Source http://localhost:8090/nuget/packages -ApiKey $apiKey
 
 
+nuget.exe push -Source "betcycle-artifacts" -ApiKey az $packFullPath
+
+
 exit $LastExitCode

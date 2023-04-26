@@ -19,13 +19,8 @@ pool:
 #     - agent.name -equals mydockeragent
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: $(Build.BuildNumber)
+  displayName: 'build number'
 
 
 - task: PowerShell@2
@@ -45,3 +40,12 @@ steps:
     filePath: 'build/build_db_nuget_push.ps1'
     arguments: 'betcycle-migrations $(Build.BuildNumber)'
   displayName: 'publish pack'
+
+- task: NuGetAuthenticate@0
+  displayName: 'NuGet Authenticate'
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    publishVstsFeed: '<projectName>/<feed>'
+    allowPackageConflicts: true

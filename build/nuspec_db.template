@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>#DBNAME#</id>
-    <version>0.0.0</version>
+    <version>0.0</version>
     <authors>EduardoPiairo</authors>
     <owners>EduardoPiairo</owners>
     <description>#DBNAME# ARM template</description>

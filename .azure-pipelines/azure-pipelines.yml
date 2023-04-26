@@ -37,5 +37,5 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'build/nuget-pack_db-app.ps1'
-    arguments: 'betcycle-migrations'
+    arguments: 'betcycle-migrations $(Build.BuildNumber)'
   displayName: 'create pack'

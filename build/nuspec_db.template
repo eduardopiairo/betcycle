@@ -15,7 +15,7 @@
   <!--<file src="flyway\licenses\*.*" target=".\licenses"/>-->
 	<file src="flyway\sql\*.*" target=".\sql" />
   <file src="flyway\flyway.cmd" target="." />
-  <file src="octo\*" target=".\octo" />
+  <file src="octo\*" target="." />
 
   </files>
 </package>

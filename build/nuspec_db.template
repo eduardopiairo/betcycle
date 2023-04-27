@@ -11,7 +11,7 @@
 	<file src="flyway\conf\*.*" target=".\conf"/>
 	<file src="flyway\drivers\*.*" target=".\drivers"/>
 	<file src="flyway\jars\*.*" target=".\jars"/>
-	<file src="flyway\lib\community\*.*" target=".\lib\community"/>
+	<file src="flyway\lib\*.*" target=".\lib"/>
   <file src="flyway\licenses\*.*" target=".\licenses"/>
 	<file src="flyway\sql\*.*" target=".\sql" />
   <file src="flyway\flyway.cmd" target="." />

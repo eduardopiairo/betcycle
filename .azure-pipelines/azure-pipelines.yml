@@ -41,7 +41,7 @@ steps:
   inputs:
     filePath: 'build/build_db_nuget_push.ps1'
     arguments: 'betcycle-migrations $(Build.BuildNumber) $(API_KEY)'
-  displayName: 'publish pack'
+  displayName: 'publish pack to octopus'
 
 - task: NuGetCommand@2
   inputs:
@@ -49,3 +49,4 @@ steps:
     packagesToPush: './output/betcycle-migrations.$(Build.BuildNumber).nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: 'betcycle/betcycle-artifacts'
+  displayName: 'publish pack to ADO Artifacts'

@@ -256,3 +256,6 @@ src/DevOpsPorto/appsettings\.json
 
 #Mac
 .DS_Store
+
+# Octopus Deploy env
+octopus-deploy/.env

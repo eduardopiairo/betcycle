@@ -5,7 +5,7 @@
     <version>0.0</version>
     <authors>EduardoPiairo</authors>
     <owners>EduardoPiairo</owners>
-    <description>#DBNAME# ARM template</description>
+    <description>#DBNAME#</description>
   </metadata>
   <files>
 	<!--<file src="conf\*.*" target=".\conf"/>

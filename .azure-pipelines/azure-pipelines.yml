@@ -58,4 +58,4 @@ steps:
     command: 'push'
     packagesToPush: './output/betcycle-migrations.$(Build.BuildNumber).nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: betcycle/betcycle-artifacts'
+    publishVstsFeed: 'betcycle/betcycle-artifacts'

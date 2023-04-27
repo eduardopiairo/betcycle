@@ -43,8 +43,8 @@ steps:
 #     arguments: 'betcycle-migrations $(Build.BuildNumber)'
 #   displayName: 'publish pack'
 
-- task: NuGetAuthenticate@0
-  displayName: 'NuGet Authenticate'
+# - task: NuGetAuthenticate@0
+#   displayName: 'NuGet Authenticate'
 
 # - task: NuGetCommand@2
 #   displayName: 'NuGet push'

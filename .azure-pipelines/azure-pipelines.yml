@@ -40,7 +40,7 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'build/build_db_nuget_push.ps1'
-    arguments: 'betcycle-migrations $(Build.BuildNumber)'
+    arguments: 'betcycle-migrations $(Build.BuildNumber) $(API_KEY)'
   displayName: 'publish pack'
 
 - task: NuGetCommand@2

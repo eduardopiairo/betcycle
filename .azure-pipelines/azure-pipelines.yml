@@ -37,11 +37,11 @@ steps:
     arguments: 'betcycle-migrations $(Build.BuildNumber)'
   displayName: 'create pack'
 
-- task: PowerShell@2
-  inputs:
-    filePath: 'build/build_db_nuget_push.ps1'
-    arguments: 'betcycle-migrations $(Build.BuildNumber)'
-  displayName: 'publish pack'
+# - task: PowerShell@2
+#   inputs:
+#     filePath: 'build/build_db_nuget_push.ps1'
+#     arguments: 'betcycle-migrations $(Build.BuildNumber)'
+#   displayName: 'publish pack'
 
 - task: NuGetAuthenticate@0
   displayName: 'NuGet Authenticate'

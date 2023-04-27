@@ -46,9 +46,16 @@ steps:
 - task: NuGetAuthenticate@0
   displayName: 'NuGet Authenticate'
 
+# - task: NuGetCommand@2
+#   displayName: 'NuGet push'
+#   inputs:
+#     command: push
+#     publishVstsFeed: 'betcycle/betcycle-artifacts'
+#     allowPackageConflicts: true
+
 - task: NuGetCommand@2
-  displayName: 'NuGet push'
   inputs:
-    command: push
-    publishVstsFeed: 'betcycle/betcycle-artifacts'
-    allowPackageConflicts: true
+    command: 'push'
+    packagesToPush: './output'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: betcycle/betcycle-artifacts'

@@ -10,9 +10,7 @@ $packFullPath = $packPath + "." +$buildNumber + $packExtension
 Write-Output $packFullPath
 
 #push from VSTS to Octopus Deploy
-#nuget push $packFullPath -Source http://localhost:8080/nuget/packages -ApiKey API-OCDNB3OLYYRC4FSMQKPVYCVO1KXXPUN
-
-nuget push $packFullPath -ApiKey API-OCDNB3OLYYRC4FSMQKPVYCVO1KXXPUN -Source http://localhost:8080/Spaces-1/nuget/packages
+nuget push $packFullPath  -ApiKey API-RB94RZ8YWLXISQDGJPT5K31QLNJPBC -Source https://eduardopiairo.octopus.app/Spaces-1/nuget/packages
 
 
 exit $LastExitCode

@@ -56,6 +56,6 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'push'
-    packagesToPush: './output'
+    packagesToPush: './output/betcycle-migrations.$(Build.BuildNumber).nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: betcycle/betcycle-artifacts'

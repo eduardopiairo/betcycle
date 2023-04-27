@@ -14,6 +14,7 @@
 	<file src="lib\community\*.*" target=".\lib\community"/>
   <file src="licenses\*.*" target=".\licenses"/>-->
 	<file src="sql\*.*" target=".\sql" />
+  <file src="octo\octo-deploy.ps1" target=".\octo" />
 	<!--<file src="flyway.cmd" target="." />-->
   </files>
 </package>

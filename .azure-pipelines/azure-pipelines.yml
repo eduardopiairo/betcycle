@@ -18,6 +18,8 @@ pool:
 #   demands:
 #     - agent.name -equals mydockeragent
 
+name: 0.0.$(Rev:r)
+
 steps:
 - script: echo $(Build.BuildNumber)
   displayName: 'build number'

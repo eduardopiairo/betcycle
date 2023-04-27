@@ -8,13 +8,14 @@
     <description>#DBNAME#</description>
   </metadata>
   <files>
-	<!--<file src="conf\*.*" target=".\conf"/>
-	<file src="drivers\*.*" target=".\drivers"/>
-	<file src="jars\*.*" target=".\jars"/>
-	<file src="lib\community\*.*" target=".\lib\community"/>
-  <file src="licenses\*.*" target=".\licenses"/>-->
-	<file src="sql\*.*" target=".\sql" />
+	<file src="flyway\conf\*.*" target=".\conf"/>
+	<file src="flyway\drivers\*.*" target=".\drivers"/>
+	<file src="flyway\jars\*.*" target=".\jars"/>
+	<file src="flyway\lib\community\*.*" target=".\lib\community"/>
+  <file src="flyway\licenses\*.*" target=".\licenses"/>
+	<file src="flyway\sql\*.*" target=".\sql" />
+  <file src="flyway\flyway.cmd" target="." />
   <file src="octo\octo-deploy.ps1" target=".\octo" />
-	<!--<file src="flyway.cmd" target="." />-->
+
   </files>
 </package>

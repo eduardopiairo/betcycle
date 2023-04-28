@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>#DBNAME#</id>
+    <version>0.0</version>
+    <authors>EduardoPiairo</authors>
+    <owners>EduardoPiairo</owners>
+    <description>#DBNAME#</description>
+  </metadata>
+  <files>
+	<file src="flyway\conf\*.*" target=".\conf"/>
+	<file src="flyway\drivers\*.*" target=".\drivers"/>
+	<file src="flyway\jars\*.*" target=".\jars"/>
+	<file src="flyway\lib\*.*" target=".\lib"/>
+  <!--<file src="flyway\licenses\*.*" target=".\licenses"/>-->
+	<file src="flyway\sql\*.*" target=".\sql" />
+  <file src="flyway\flyway.cmd" target="." />
+  <file src="octo\*" target="." />
+
+  </files>
+</package>

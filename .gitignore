@@ -252,3 +252,10 @@ paket-files/
 *.sln.iml
 src/DevOpsPorto/appsettings\.json
 .vscode/*
+
+
+#Mac
+.DS_Store
+
+# Octopus Deploy env
+octopus-deploy/.env

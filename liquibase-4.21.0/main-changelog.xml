@@ -1,0 +1,15 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd
+        http://www.liquibase.org/xml/ns/pro
+        http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd ">
+
+    <include file="migrations/V20230606.1600__Create_TB_Race.sql"/>
+    <include file="migrations/V20230606.1606__Create_TB_Rider.sql"/>
+    <include file="migrations/V20230606.1802__Create_TB_User.sql"/>
+    <include file="migrations/V20230606.1604__Create_TB_Team.sql"/>
+
+</databaseChangeLog>

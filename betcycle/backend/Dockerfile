@@ -11,4 +11,4 @@ COPY ./app/requirements.txt /app/
 ARG INSTALL_DEV=false
 RUN bash -c "pip install -r requirements.txt"
 
-COPY ./app /app
+COPY ./betcycle/backend/app /app

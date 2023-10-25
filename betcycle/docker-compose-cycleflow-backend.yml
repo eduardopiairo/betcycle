@@ -5,8 +5,8 @@ services:
     image: cycleflow_backend
     container_name: cycleflow_backend
     build:
-      context: ./cyclebet/backend
-      dockerfile: cyclebet-backend.dockerfile
+      context: ./betcycle/backend
+      dockerfile: betcycle-backend.dockerfile
     volumes:
       - .:/code
     ports:

@@ -27,19 +27,19 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'build/build_db_nuspec.ps1'
+    filePath: 'db/build/build_db_nuspec.ps1'
     arguments: 'betcycle-migrations'
   displayName: 'build and replace'
 
 - task: PowerShell@2
   inputs:
-    filePath: 'build/build_db_nuget_pack.ps1'
+    filePath: 'db/build/build_db_nuget_pack.ps1'
     arguments: 'betcycle-migrations $(Build.BuildNumber)'
   displayName: 'create pack'
 
 - task: PowerShell@2
   inputs:
-    filePath: 'build/build_db_nuget_push.ps1'
+    filePath: 'db/build/build_db_nuget_push.ps1'
     arguments: 'betcycle-migrations $(Build.BuildNumber) $(API_KEY)'
   displayName: 'publish pack to octopus'
 
@@ -48,5 +48,5 @@ steps:
     command: 'push'
     packagesToPush: './output/betcycle-migrations.$(Build.BuildNumber).nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'betcycle/betcycle-artifacts'
+    publishVstsFeed: '8f25da86-f786-4636-a2e8-98aa54e10233'
   displayName: 'publish pack to ADO Artifacts'

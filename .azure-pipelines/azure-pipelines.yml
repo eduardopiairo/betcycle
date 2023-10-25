@@ -37,12 +37,6 @@ steps:
     arguments: 'betcycle-migrations $(Build.BuildNumber)'
   displayName: 'create pack'
 
-- task: PowerShell@2
-  inputs:
-    filePath: 'db/build/build_db_nuget_push.ps1'
-    arguments: 'betcycle-migrations $(Build.BuildNumber) $(API_KEY)'
-  displayName: 'publish pack to octopus'
-
 - task: NuGetCommand@2
   inputs:
     command: 'push'

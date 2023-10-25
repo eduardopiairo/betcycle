@@ -28,7 +28,7 @@ EMAILS_FROM_EMAIL=info@devolinkbackend.com
 
 USERS_OPEN_REGISTRATION=False
 
-SENTRY_DSN=
+SENTRY_DSN=mysentry
 
 # Flower
 FLOWER_BASIC_AUTH=admin:superedp

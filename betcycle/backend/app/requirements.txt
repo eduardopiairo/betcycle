@@ -6,3 +6,4 @@ passlib==1.7.4
 alembic==1.12.0
 pydantic-settings
 uvicorn
+decouple==0.0.7

@@ -10,6 +10,8 @@ class AppSettings(BaseSettings):
     LICENSE_NAME: str | None = config("LICENSE", default=None)
     CONTACT_NAME: str | None = config("CONTACT_NAME", default=None)
     CONTACT_EMAIL: str | None = config("CONTACT_EMAIL", default=None)
+    API_V1_STR: str | None = config("API_V1_STR", default=None)
+    SQLALCHEMY_DATABASE_URI: str | None = config("SQLALCHEMY_DATABASE_URI", default=None)
 
 
 settings = AppSettings()

@@ -27,6 +27,9 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
+    - name: Upload coverage report to Codacy
+      run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
+
     - name: Log in to Docker Hub
       run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 

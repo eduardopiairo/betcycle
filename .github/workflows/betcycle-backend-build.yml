@@ -18,7 +18,9 @@ jobs:
       #run: docker build . --file ./betcycle/backend/Dockerfile --tag betcycle-backend:$(date +%s)
       run: docker build --tag betcycle-backend:$(date +%s) ./betcycle/backend
 
-
     - name: Log in to Docker Hub
       run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
+
+    - name: Push to Docker Hub
+      run: docker push -u ${{secrets.DOCKER_USERNAME}}/betcycle-backend
 

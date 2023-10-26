@@ -20,11 +20,13 @@ jobs:
 
     - name: Build the Docker image
       #run: docker build . --file ./betcycle/backend/Dockerfile --tag betcycle-backend:$(date +%s)
-      run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:0.0.$BUILD_ID ./betcycle/backend
+      run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest ./betcycle/backend
 
     - name: Log in to Docker Hub
       run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 
     - name: Push to Docker Hub
-      run: docker push ${{secrets.DOCKER_USERNAME}}/betcycle-backend:0.0.$BUILD_ID
+      run: |
+        docker push ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID
+        docker push ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest
 

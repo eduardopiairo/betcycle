@@ -1,0 +1,26 @@
+version: "3.3"
+
+services:
+
+  prometheus:
+    image: prom/prometheus:v2.45.2
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitor/prometheus-config:/etc/prometheus/
+
+#  grafana:
+#    hostname: grafana
+#    image: grafana/grafana
+#    ports:
+#      - 3000:3000
+#
+  app:
+    build:
+      context: ./monitor/src
+      dockerfile: Dockerfile
+    depends_on:
+      - prometheus
+    ports:
+      - "8080:8080"
+    command: ["python3", "app/main.py"]

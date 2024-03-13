@@ -11,6 +11,8 @@ The deployment pipeline has the following stages:
 2. Continuous Integration
 3. Continuous Delivery
 
-## Database
+## Backend
 
-### Database migrations 
+## Frontend
+
+## Database 

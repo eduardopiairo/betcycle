@@ -17,20 +17,31 @@ version: 2.1
 #           name: "Say hello"
 #           command: "echo Hello, World!"
 
+#jobs:
+#  build-on-windows:
+#    resource_class: 'windows.medium'
+#    machine:
+#      image: 'windows-server-2022-gui:current'
+#      shell: 'powershell.exe -ExecutionPolicy Bypass'
+#    steps:
+#      # Commands are run in a Windows virtual machine environment
+#      - checkout
+#      - run: Write-Host 'Hello, Windows'
+
+
 jobs:
-  build-on-windows:
-    resource_class: 'windows.medium'
-    machine:
-      image: 'windows-server-2022-gui:current'
-      shell: 'powershell.exe -ExecutionPolicy Bypass'
+  build:
+    docker:
+      - image: cimg/base:2024.11
     steps:
-      # Commands are run in a Windows virtual machine environment
       - checkout
-      - run: Write-Host 'Hello, Windows'
+      # Whatever you want to do
+      - run: sudo apt-get update && sudo apt-get install -y cowsay
+      - run: cowsay Continuous Integration Rocks!
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   build-and-upload:
     jobs:
-      - build-on-windows
+      - build

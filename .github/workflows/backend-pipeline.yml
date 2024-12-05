@@ -20,8 +20,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Hello World
-      run: echo "Hello World"
+    
+    - name: Build the Docker image
+      run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest ./betcycle/backend
 
 
 #    - name: Build the Docker image

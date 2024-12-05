@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Build the Docker image
-      run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest ./betcycle/backend
+      run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest ./backend
 
 
 #    - name: Build the Docker image

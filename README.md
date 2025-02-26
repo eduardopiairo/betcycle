@@ -20,3 +20,5 @@ The deployment pipeline has the following stages:
 ## Database
 
 ### Database migrations 
+
+TBD

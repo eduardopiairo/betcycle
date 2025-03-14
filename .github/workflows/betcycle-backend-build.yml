@@ -2,7 +2,10 @@ name: betcycle-backend
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+      - main
+      - feature/*
+      - hotfix/*
   pull_request:
     branches: [ "main" ]
 

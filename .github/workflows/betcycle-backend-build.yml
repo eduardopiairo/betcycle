@@ -21,6 +21,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Set working directory
+      working-directory: ./backend
+
     - name: Build the Docker image
       #run: docker build . --file ./betcycle/backend/Dockerfile --tag betcycle-backend:$(date +%s)
       run: docker build --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:$BUILD_ID --tag ${{secrets.DOCKER_USERNAME}}/betcycle-backend:latest ./betcycle/backend

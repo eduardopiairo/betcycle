@@ -1,0 +1,5 @@
+# Setup
+
+## Miniconda
+
+Install miniconda

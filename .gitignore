@@ -259,3 +259,4 @@ src/DevOpsPorto/appsettings\.json
 
 # Octopus Deploy env
 octopus-deploy/.env
+backend/app/__pycache__/*

@@ -7,7 +7,9 @@ from database import get_db, Base, engine
 # Initialize the database
 Base.metadata.create_all(bind=engine)
 
-
+"""
+Main FastAPI application module providing API endpoints for the backend service.
+"""
 app = FastAPI()
 
 

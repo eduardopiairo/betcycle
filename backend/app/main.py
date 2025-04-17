@@ -1,7 +1,9 @@
 from typing import Union
 from fastapi import FastAPI
+from sqlalchemy.orm import Session
 
-from database import get_db, Base, engine
+from app.database import get_db, Base, engine
+from app.models import User as UserModel
 
 
 # Initialize the database

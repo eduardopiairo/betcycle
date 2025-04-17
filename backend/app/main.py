@@ -20,7 +20,7 @@ def read_root():
 
 # New endpoint to create a user
 @app.post("/users/")
-def create_user(user: User):
+def create_user(user: User, db: Session = Depends(get_db)):
     # Check if the user already exists
     existing_user = db.query(UserModel).filter(UserModel.email == user.email).first()
     if existing_user:

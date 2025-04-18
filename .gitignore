@@ -258,5 +258,4 @@ src/DevOpsPorto/appsettings\.json
 .DS_Store
 
 # Octopus Deploy env
-octopus-deploy/.env
 backend/app/__pycache__/*

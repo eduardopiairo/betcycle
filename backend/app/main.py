@@ -1,3 +1,7 @@
+"""
+Main FastAPI application module providing API endpoints for the backend service.
+"""
+
 from fastapi import FastAPI
 from sqlalchemy.orm import Session
 
@@ -8,9 +12,7 @@ from app.models import User as UserModel
 # Initialize the database
 Base.metadata.create_all(bind=engine)
 
-"""
-Main FastAPI application module providing API endpoints for the backend service.
-"""
+
 app = FastAPI()
 
 

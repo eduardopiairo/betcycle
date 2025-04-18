@@ -1,3 +1,0 @@
-ls
-
-.\flyway.cmd 

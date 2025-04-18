@@ -17,6 +17,12 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
+    """
+        Return a JSON response with a greeting message.
+
+        Returns:
+        dict: A dictionary with the key "Hello" and the value "World".
+    """
     return {"Hello": "World"}
 
 

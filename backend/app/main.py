@@ -1,12 +1,12 @@
 """
-Main FastAPI application module providing API endpoints for the backend service.
+    Main FastAPI application module providing API endpoints for the backend service.
 """
 
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database import get_db, Base, engine
-from app.models import User
+from app.models import User as UserModel
 
 
 # Initialize the database

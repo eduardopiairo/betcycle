@@ -1,4 +1,4 @@
-+"""
+"""
     Database configuration module for SQLAlchemy ORM integration with PostgreSQL.
     Provides database connection, session management, and base model class.
 """

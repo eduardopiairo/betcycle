@@ -1,8 +1,13 @@
-# Betcycle Project
+# Betcycle
 
-A project to explore concepts related to the design and implementation of the deployment pipeline. I will use this project to share my knowledge about the deployment pipeline, explore new approaches, and support my talks, presentations, and posts ... 
+> _A DevOps Quest from Exploration to Production_
 
-The intended deployment pipeline will support applications, databases, and infrastructure changes. 
+BetCycle covers the full lifecycle of software development and deployment from exploration to production, with an emphasis on the following topics:
+- Application development
+- CI/CD pipeline design and implementation
+- Internal Developer Platform capabilities implementation and exploration 
+
+The goal is to embark on a quest that starts with writing code in the local environment (aka my laptop) - and finishes in production. The path to production includes writing and testing code, building artifacts, deploying artifacts in production, monitoring, security, and cost.
 
 
 ## Cycling data

@@ -71,29 +71,14 @@ __8. Cost Management__
 
 ## Roadmap
 
-You can view the [project roadmap here](roadmap.md)
+You can view the [project roadmap here](./docs/roadmap.md)
 
 ## Local Setup
 
-How to make the [local setup](local-setup.d)
+How to make the [local setup](./docs/local-setup.d)
 
 
 ---
 ## Cycling data
 
 The cycling data can be found in the [ProCyclingStats](https://www.procyclingstats.com/)
-
-
-## Running locally
-
-### Docker
-
-Build docker image
-```
-docker build --tag betcycle-backend:0.0.1  .
-```
-
-Run container
-```
-docker run --name betcycle-backend  -p 8000:8000 -d betcycle-backend:0.0.1
-```

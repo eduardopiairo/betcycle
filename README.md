@@ -69,25 +69,20 @@ __8. Cost Management__
 - Optimizing cloud resources to reduce costs.
 
 
+## Roadmap
 
+You can view the [project roadmap here](roadmap.md)
+
+## Local Setup
+
+How to make the [local setup](local-setup.d)
+
+
+---
 ## Cycling data
 
 The cycling data can be found in the [ProCyclingStats](https://www.procyclingstats.com/)
 
-## Deployment Pipeline
-
-The deployment pipeline has the following stages:
-
-1. Source Control
-2. Continuous Integration
-3. Continuous Delivery
-
-## Database
-
-### Database migrations
-
-
----
 
 ## Running locally
 

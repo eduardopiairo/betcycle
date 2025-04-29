@@ -32,38 +32,51 @@ __1. Local Development and Exploration__
 - Setting up a reproducible development environment.
 - Designing a workflow that integrates seamlessly with CI/CD.
 
-__2. CI/CD Pipelines__
+
+__2. Application Development (3-Layer Architecture)__
+- Data Layer
+    - Designing a database schema for cycling events, participants, and bets.
+    - Setting up data ingestion workflows and APIs for data access.
+- Backend Layer
+    - Building business logic for user authentication, bet placement, and odds calculation.
+    - Exposing APIs for frontend communication (e.g., REST or GraphQL).
+- Frontend Layer
+    - Creating a responsive and user-friendly interface for users.
+    - Integrating live updates and bet management features.
+
+
+__3. CI/CD Pipelines__
 - CI/CD tools like GitHub Actions, Jenkins, GitLab CI, CircleCI, etc.
 - Writing pipelines as code (e.g., YAML configurations for GitHub Actions or GitLab).
 - Triggering pipelines based on different events (e.g., code pushes, PRs).
 - Automating tests (unit tests, integration tests, etc.).
 
-__3. Infrastructure as Code (IaC)__
+__4. Infrastructure as Code (IaC)__
 - Tools like Terraform, Pulumi, or AWS CloudFormation.
 - Versioning and managing your infrastructure as you would code.
 - Setting up environments (e.g., staging, production).
 
 
-__4. Policies as Code__
+__5. Policies as Code__
 - Tools like Open Policy Agent (OPA) or HashiCorp Sentinel.
 - Defining and enforcing policies for deployments, security, and compliance.
 
-__5. Internal Developer Platform (IDP)__
+__6. Internal Developer Platform (IDP)__
 - Building a platform to abstract infrastructure and pipelines for developers.
 - Tools like Backstage for developer portals.
 - Creating self-service workflows for developers.
 
-__6. Kubernetes__
+__7. Kubernetes__
 - Orchestrating containerized applications with Kubernetes.
 - Setting up clusters, managing workloads, and ensuring scalability.
 - Tools like Helm for managing Kubernetes manifests.
 
-__7. Monitoring and Security__
+__8. Monitoring and Security__
 - Observability tools like Prometheus, Grafana, and ELK Stack.
 - Security scanning tools like Snyk, Trivy, or Aqua.
 - Setting up alerts and incident response practices.
 
-__8. Cost Management__
+__9. Cost Management__
 
 - Tools like FinOps, AWS Cost Explorer, Azure Cost Analysis.
 - Optimizing cloud resources to reduce costs.

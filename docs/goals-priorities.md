@@ -14,6 +14,47 @@ This document defines measurable goals for each key area in the BetCycle project
 
 ---
 
+## Application Development (3-Layer Architecture)
+**Priority**: High (Core functionality of the project)
+- **Goals**:
+
+### Data Layer:
+  - **Design**:
+    - [ ] Define the schema for cycling events, participants, and bets.
+    - [ ] Choose a database solution (e.g., PostgreSQL, MySQL, MongoDB).
+    - [ ] Identify external data sources (e.g., APIs or scraping for race data).
+  - **Implementation**:
+    - [ ] Set up the database with the defined schema.
+    - [ ] Write scripts for ingesting and updating race data.
+    - [ ] Expose data access through APIs (e.g., REST or GraphQL).
+
+### Backend Layer:
+  - **Design**:
+    - [ ] Define the core business logic:
+      - User registration and authentication.
+      - Placing and managing bets.
+      - Calculating odds and payouts.
+    - [ ] Choose a backend framework (e.g., Node.js, Django, Spring Boot).
+  - **Implementation**:
+    - [ ] Build APIs for frontend communication (e.g., REST or GraphQL).
+    - [ ] Integrate with the data layer for accessing and updating information.
+    - [ ] Write unit and integration tests for backend functionality.
+
+### Frontend Layer:
+  - **Design**:
+    - [ ] Create wireframes or mockups for the UI.
+    - [ ] Define features:
+      - User dashboard with cycling events and betting history.
+      - Live updates on race events.
+      - Bet placement and management interface.
+    - [ ] Choose a frontend framework (e.g., React, Angular, Vue).
+  - **Implementation**:
+    - [ ] Build a responsive UI with the defined features.
+    - [ ] Integrate with backend APIs for real-time data.
+    - [ ] Write unit and end-to-end tests for the frontend.
+
+---
+
 ## Continuous Integration (CI)
 **Priority**: High (Fast feedback loops for developers)
 - **Goals**:
@@ -149,10 +190,6 @@ This document defines measurable goals for each key area in the BetCycle project
 ---
 
 ## Summary of Priorities
-1. **High Priority**: Local Development, CI, IaC, CD, Kubernetes, Monitoring, Security.
+1. **High Priority**: Local Development, Application Development, CI, IaC, CD, Kubernetes, Monitoring, Security.
 2. **Medium Priority**: Policies as Code, IDP, Cost Management.
 3. **Low Priority**: Continuous Improvement.
-
----
-
-This updated goals and priorities list ensures that all key areas of BetCycle—from local development to production—are covered with measurable milestones. Let me know if you need help with specific phases or tasks! 

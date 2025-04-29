@@ -27,43 +27,44 @@ My goals for this quest are aimed at enhancing the development and deployment pr
 
 Here are the major components of the project and what can be explored in each:
 
-1. __Local Development and Exploration__
+__1. Local Development and Exploration__
 - Tools for local development (e.g., Docker, Vagrant).
 - Setting up a reproducible development environment.
 - Designing a workflow that integrates seamlessly with CI/CD.
 
-2. __CI/CD Pipelines__
+__2. CI/CD Pipelines__
 - CI/CD tools like GitHub Actions, Jenkins, GitLab CI, CircleCI, etc.
 - Writing pipelines as code (e.g., YAML configurations for GitHub Actions or GitLab).
 - Triggering pipelines based on different events (e.g., code pushes, PRs).
 - Automating tests (unit tests, integration tests, etc.).
 
-3. __Infrastructure as Code (IaC)__
+__3. Infrastructure as Code (IaC)__
 - Tools like Terraform, Pulumi, or AWS CloudFormation.
 - Versioning and managing your infrastructure as you would code.
 - Setting up environments (e.g., staging, production).
 
 
-4. __Policies as Code__
+__4. Policies as Code__
 - Tools like Open Policy Agent (OPA) or HashiCorp Sentinel.
 - Defining and enforcing policies for deployments, security, and compliance.
 
-5. __Internal Developer Platform (IDP)__
+__5. Internal Developer Platform (IDP)__
 - Building a platform to abstract infrastructure and pipelines for developers.
 - Tools like Backstage for developer portals.
 - Creating self-service workflows for developers.
 
-6. __Kubernetes__
+__6. Kubernetes__
 - Orchestrating containerized applications with Kubernetes.
 - Setting up clusters, managing workloads, and ensuring scalability.
 - Tools like Helm for managing Kubernetes manifests.
 
-7. __Monitoring and Security__
+__7. Monitoring and Security__
 - Observability tools like Prometheus, Grafana, and ELK Stack.
 - Security scanning tools like Snyk, Trivy, or Aqua.
 - Setting up alerts and incident response practices.
 
-8. __Cost Management__
+__8. Cost Management__
+
 - Tools like FinOps, AWS Cost Explorer, Azure Cost Analysis.
 - Optimizing cloud resources to reduce costs.
 

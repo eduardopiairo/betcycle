@@ -88,9 +88,9 @@ You can view the [project roadmap here](./docs/roadmap.md)
 
 ## Quest Book
 
-| Step      | Description                                                                   |
-|---------- |----------                                                                     |    
-| Step 1    | Create the hello world basic version of the application and the pipeline      |
+| Step      | Description                                                                   | Branch                    |
+|---------- |----------                                                                     | ----------                |    
+| Step 1    | Create the hello world basic version of the application and the pipeline      | [feature/introduction](https://github.com/eduardopiairo/betcycle/tree/feature/introduction)      |
 
 
 ## Local Setup

@@ -56,7 +56,6 @@ __4. Infrastructure as Code (IaC)__
 - Versioning and managing your infrastructure as you would code.
 - Setting up environments (e.g., staging, production).
 
-
 __5. Policies as Code__
 - Tools like Open Policy Agent (OPA) or HashiCorp Sentinel.
 - Defining and enforcing policies for deployments, security, and compliance.
@@ -85,6 +84,14 @@ __9. Cost Management__
 ## Roadmap
 
 You can view the [project roadmap here](./docs/roadmap.md)
+
+
+## Quest Book
+
+| Step      | Description                                                                   |
+|---------- |----------                                                                     |    
+| Step 1    | Create the hello world basic version of the application and the pipeline      |
+
 
 ## Local Setup
 

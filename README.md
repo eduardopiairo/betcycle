@@ -22,6 +22,19 @@ TBD
 >
 > by Martin Fowler, [Deployment Pipeline](https://martinfowler.com/bliki/DeploymentPipeline.html)
 
+A deployment pipeline is a set of automated steps that move code changes from development to production.
+
+- Build the application, run tests, perform code analysis, and deploy the code into the different target environments.
+- We want to release quickly, reliably, and with high quality. 
+
+
+### Pipeline diagram
+
+Below is a simple diagram showing the three core stages of the deployment pipeline: Version Control → CI → CD.
+
+![Deployment pipeline diagram](assets/pipeline_simple.png)
+
+
 
 ## Infrastructure
 

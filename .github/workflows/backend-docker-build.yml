@@ -15,6 +15,10 @@ on:
       - 'backend/**'
       - '.github/workflows/backend-docker-build.yml'
 
+env:
+  VERSION_MAJOR: 0
+  VERSION_MINOR: 0
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,4 +28,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t betcycle-backend:${{ github.run_number }} ./backend
+        run: docker build -t betcycle-backend:${{ env.VERSION_MAJOR }}.${{ env.VERSION_MINOR }}.${{ github.run_number }} ./backend

@@ -1,0 +1,27 @@
+name: backend docker build
+
+on:
+  push:
+    branches:
+      - main
+      - feature/**
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-docker-build.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-docker-build.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t betcycle-backend:${{ github.sha }} ./backend

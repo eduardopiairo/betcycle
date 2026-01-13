@@ -14,7 +14,45 @@ Such quest includes the following elements:
 
 ## Application
 
-TBD
+The BetCycle backend is built with **Python** using the **FastAPI** framework.
+
+### Tech Stack
+- **Language**: Python 3.x
+- **Framework**: FastAPI
+- **Server**: Uvicorn (ASGI server)
+
+### Local Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd betcycle/backend
+   ```
+
+2. **Create and activate a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+   The API will be available at: `http://localhost:8000`
+
+### Available Endpoints
+
+- `GET /` - Hello World endpoint
+- `GET /health` - Health check endpoint
+- `GET /docs` - Interactive API documentation (Swagger UI)
+- `GET /redoc` - Alternative API documentation (ReDoc)
 
 ## Deployment Pipeline
 
